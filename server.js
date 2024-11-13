@@ -14,4 +14,6 @@ const tcpServer = net.createServer(
     }
 )
 
-tcpServer.listen(3000, 'localhost');
+tcpServer.listen(3001, 'localhost', function() {
+    console.log('Server listening on port 3001');
+});
